@@ -1,0 +1,116 @@
+:root {
+  --b: 10px solid green;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.digit {
+  display: flex;
+  flex-direction: column;
+}
+
+.semicolon {
+  display: flex;
+  flex-direction: column;
+  gap: 12.5px;
+}
+
+.semicolon div {
+  height: 15px;
+  width: 15px;
+  background-color: green;
+}
+
+.first,
+.second {
+  height: 50px;
+  width: 50px;
+}
+
+.eight .first {
+  border: var(--b);
+  border-bottom-width: 5px;
+}
+
+.eight .second {
+  border: var(--b);
+  border-top-width: 5px;
+}
+
+.zero .first {
+  border-bottom: none;
+}
+
+.zero .second {
+  border-top: none;
+}
+
+.one .first,
+.one .second,
+.seven .second {
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+}
+
+.two .first {
+  border-left: none;
+  border-bottom-width: 5px;
+}
+
+.two .second {
+  border-right: none;
+  border-top-width: 5px;
+}
+
+.three .first,
+.three .second,
+.five .second {
+  border-left: none;
+}
+
+.four .first {
+  border-top: none;
+  border-bottom-width: 5px;
+}
+
+.four .second {
+  border-left: none;
+  border-top-width: 5px;
+  border-bottom: none;
+}
+
+.five .first {
+  border-right: none;
+}
+
+.six .first {
+  border-right: none;
+  border-bottom-width: 5px;
+}
+
+.six .second {
+  border-top-width: 5px;
+}
+
+.seven .first {
+  border-bottom: none;
+  border-left: none;
+}
+
+.nine .first {
+  border-bottom-width: 5px;
+}
+
+.nine .second {
+  border-left: none;
+  border-top-width: 5px;
+}
